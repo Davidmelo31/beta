@@ -1,11 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Aplicación de Gestión de Desperdicios Alimentarios - Wireframe</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.5; margin: 20px; }
+        header, section, footer { margin-bottom: 20px; padding: 10px; border: 1px solid #ccc; }
+        nav ul { list-style-type: none; padding: 0; }
+        nav ul li { display: inline; margin-right: 10px; }
+    </style>
 </head>
 <body>
-    
+
+    <header>
+        <h1>Bienvenido a la Aplicación de Gestión de Desperdicios Alimentarios</h1>
+        <nav>
+            <ul>
+                <li>Registro</li>
+                <li>Iniciar Sesión</li>
+                <li>Artículos</li>
+                <li>Encuestas</li>
+                <li>Emprendedores</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="registro">
+        <h2>Registro de Usuario</h2>
+        <form>
+            <label>Correo Electrónico:</label><br>
+            <input type="email" required><br>
+            <label>Contraseña:</label><br>
+            <input type="password" required><br>
+            <label>Número de Celular:</label><br>
+            <input type="tel" required><br>
+            <button type="submit">Registrarse</button>
+        </form>
+    </section>
+
+    <section id="login">
+        <h2>Iniciar Sesión</h2>
+        <form>
+            <label>Correo Electrónico:</label><br>
+            <input type="email" required><br>
+            <label>Contraseña:</label><br>
+            <input type="password" required><br>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+        <a href="#recuperar">¿Olvidaste tu contraseña?</a>
+    </section>
+
+    <section id="recuperar">
+        <h2>Recuperar Contraseña</h2>
+        <form>
+            <label>Correo Electrónico:</label><br>
+            <input type="email" required><br>
+            <button type="submit">Enviar Código</button>
+        </form>
+    </section>
+
+    <section id="articulos">
+        <h2>Artículos Informativos</h2>
+        <p>Aquí se mostrarán artículos sobre el desperdicio de alimentos.</p>
+    </section>
+
+    <section id="encuestas">
+        <h2>Encuestas</h2>
+        <form>
+            <label>¿Cuál es tu consumo de alimentos semanal?</label><br>
+            <textarea required></textarea><br>
+            <button type="submit">Enviar Encuesta</button>
+        </form>
+    </section>
+
+    <section id="emprendedores">
+        <h2>Sección para Emprendedores</h2>
+        <form>
+            <label>Listado de Productos:</label><br>
+            <textarea required></textarea><br>
+            <button type="submit">Registrar Productos</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Aplicación de Gestión de Desperdicios Alimentarios</p>
+    </footer>
+
 </body>
 </html>
